@@ -1,0 +1,347 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Author : James Ni
+% License : MIT
+%-------------------------
+% The original format is designed Sourabh Bajaj
+% and modified for my personal use.
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{CJKutf8} % Japanese Support
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+    \vspace{-2pt}
+    \item\small{
+        \textbf{#1}{ #2 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & #2 \\
+            \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{}
+\newcommand{\resumeSubHeadingListEnd}{}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\def\Cplusplus{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+\newcommand{\Csharp}{%
+  {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%  \textbf{\href{}{}} & Email: \href{}{}\\
+%  \href{}{} & Mobile: \\
+%\end{tabular*}
+
+\begin{center}
+    \LARGE{\textbf{James Ni}}
+
+    \normalsize347-631-0698, \href{mailto:james@niis.me}{james@niis.me}, Sunnyvale, CA
+
+    \normalsize\href{https://limegrass.github.io}{limegrass.github.io} $\vert$ \normalsize\href{http://github.com/limegrass}{github.com/limegrass}
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Davidson College}{Davidson, NC}
+                {BS Physics Cum Laude, Minor in Computer Science; Major: 3.57, Minor: 3.67}{Aug. 2013 -- May 2017}
+            \resumeItemListStart
+                \resumeItem{Physics:}
+                    {Computational (Java), Modern, Statistical and Thermal, Quantum Mechanics, Electronics and Instrumentation, Electricity and Magnetism, Advanced Laboratory, Mathematical Methods for Scientists}
+                    % \vspace{-2pt}
+                \resumeItem{Computer Science:}
+                    {Data Structures (Java), Concurrent and Parallel (Java), Analysis of Algorithms (\Cplusplus), Artificial Intelligence (Java, Python)}
+                    % \vspace{-2pt}
+                \resumeItem{Mathematics:}
+                    {Calculus II-III, Linear Algebra, Sets and Proofs}
+                    % \vspace{-2pt}
+                \resumeItem{Awards and Honors:}
+                    {Bonner Scholar, Quest Bridge Matched Scholar, Bernard Society of Mathematics}
+            \resumeItemListEnd
+        \resumeSubheading
+            {Sophia University \begin{CJK}{UTF8}{min}(上智大学)\end{CJK} }{Tokyo, Japan}
+            {CIEE Tokyo, Japan -- Science and Arts; GPA: 4.0}{Spring -- Summer 2016}
+    \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{\textbf{Skills}}
+\begin{itemize}
+    \resumeSubItem{\textbf{Languages:}}
+        {
+            English (Native),
+            Japanese (N2 Certified: December 2017)
+        }
+    \resumeSubItem{\textbf{Technical Languages:}}
+        {
+            \Csharp,
+            Kotlin,
+            SQL,
+            Java,
+            Python,
+            JavaScript,
+            TypeScript,
+            \Cplusplus,
+            Rust,
+            Markdown,
+            \LaTeX
+        }
+    \resumeSubItem{\textbf{OS and Technologies:}}
+        {
+            Windows,
+            Linux,
+            Android,
+            viml,
+            RegEx,
+            Bootstrap,
+            jQuery,
+            git,
+            Bash,
+            ASP.NET MVC,
+            Photoshop,
+            TFS,
+            Visual Studio,
+            EF,
+            DevExpress,
+            JUnit,
+            MockK,
+            Moq,
+            Coroutines,
+            Selenium,
+            Docker,
+            SpecFlow
+        }
+    \resumeSubItem{\textbf{Concepts:}}
+        {
+            Design patterns,
+            architecture,
+            DI/IoC,
+            DDD,
+            TDD,
+            complexity analysis,
+            concurrency/parallelism
+        }
+%     \resumeSubItem{\textbf{Specialized Tools:}}
+%         {Office Suite, Circuitry, Hardware, LabView, MultiSim, ASP.NET MVC}
+ \end{itemize}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+    %\small{\textbf{\href{https://github.com/Limegrass/BarnesHut-N-Body}{Parallel N-Body Simulation with MPI}}}
+    %\resumeItemListStart
+        %\resumeItem{}
+            %{Utilized the Java implementation of the Message Passing Interface (MPI) to parallelize an N-body simulation using the Barnes-Hut Algorithm, focusing on the case of limited memory availability per machine}
+        %\resumeItem{}
+            %{Designed an MPI algorithm to minimize computer idle time and maximize network efficiency assuming a large, distributed data set}
+    %\resumeItemListEnd
+    % \small{\textbf{\href{https://github.com/Limegrass/Vehicular-Combat}{Path Learning with Q-Learning}}}
+    %     \resumeItemListStart
+    %         \resumeItem{}
+    %             {Quickly learned Python syntax and best practices to maintain clean code}
+    %         \resumeItem{}
+    %             {Modelled the vehicle and track environment by implementing feature functions for Q-learning}
+    %     \resumeItemListEnd
+    \small{\textbf{
+        \href {
+            https://github.com/Limegrass/Wanicchou
+        } {
+            Wanicchou - Online Dictionary Android Application
+            - Kotlin, Java, git
+        }}}
+    \resumeItemListStart
+        % \resumeItem{}
+        %     {Designed a simple Android interface for an online J-J dictionary and interfaced it with the AnkiDroid API}
+        \resumeItem{}
+            {
+                Queries online dictionaries and creates flash cards for
+                an external memorization app through their API.
+            }
+        \resumeItem{}
+            {
+                Parses and normalizes often messy data into a 
+                consistent format for an internal database
+                with the Room ORM.
+            }
+                % Scraped, cleaned, and re-formats the often messy dictionary entries to organize the information into appropriate Anki fields and generate an internal offline database for searched words, their definitions, and user-added notes
+        \resumeItem{}
+            {
+                Released on the Google Play Store.
+                Open source and managed on GitHub.
+            }
+    \resumeItemListEnd
+    \small{\textbf{
+        \href{
+            https://waifusims.com/Manga/Hakoiri
+        }{
+            Manga Web Reader
+            - \Csharp, MSSQL, git
+        }}}
+    \resumeItemListStart
+        \resumeItem{}
+            {
+                Dynamic web page generation using ASP.NET MVC to display Manga chapters and pages links saved in SQL
+            }
+        \resumeItem{}
+            {
+                Comment system where the user's comments appear and persists directly on the image. (\Csharp, JavaScript)
+            }
+        % \resumeItem{}
+            % {
+                % Release scheduling capabilities to assist in maintaining a biweekly release schedule.
+            % }
+        \resumeItem{}
+            {
+                Account system to tie users to their comments with a comment management.
+            }
+        % \resumeItem{}
+        %     {Generates about 1500 views per new chapter upload on site, more than 4000 views across sources}
+        % \resumeItem{}
+        %     {Automated new chapter uploads given an imgur album link (hidden from general users)}
+    \resumeItemListEnd
+%-----------EXPERIENCE-----------------
+\section{\textbf{Work Experience}}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {SEKO Logistics}{Itasca, IL}
+            {Software Developer (\Csharp, MSSQL, TFS)}{August 2018-Present}
+            \resumeItemListStart
+                \resumeItem{}
+                    {
+                        Designed, implemented, and tested a port for
+                        an old issue management system, incorporating
+                        design patterns and dependency injection to achieve high code coverage.
+                    }
+                \resumeItem{}
+                    {
+                        Monitored and resolved bugs within both the \Csharp \space and SQL code of the company's primary product.
+                    }
+                \resumeItem{}
+                    {
+                        Amended and improved documentation where logic
+                        is non-trivial and documentation is lacking.
+                    }
+                \resumeItem{}
+                    {
+                        Refactored and unit tested discrete systems 
+                        within code to improve the overall consistency 
+                        of the applications.
+                    }
+                \resumeItem{}
+                    {
+                        Assisted QA automation team in designing a core UI testing framework using Selenium.
+                    }
+                \resumeItem{}
+                    {
+                        Engaged in code reviews,
+                        focusing review comments on test-ability and maintainability.
+                    }
+                \resumeItem{}
+                    {
+                        Assisted in branch and general source control management.
+                    }
+                %\resumeItem{}
+                %{
+                    %Resolved \textgreater 150 documented bugs,
+                    %participated in \textgreater 120 code reviews,
+                    %and addressed \textgreater 35 other user stories.
+                %}
+            \resumeItemListEnd
+        \resumeSubheading
+            {Davidson College}{Davidson, NC}
+            {User Success Team, Information Technology Services Department}{August 2015 -- May 2017}
+            \resumeItemListStart
+                \resumeItem{}
+                    {Troubleshooted, isolated, and solved software (Windows, Mac OS, supported software) and network issues.}
+                \resumeItem{}
+                    {Logged client's issues and steps taken into ticketing systems such as ServiceNow and ZenDesk}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+% \section{\textbf{Leadership \& Volunteer}}
+%     \resumeSubHeadingListStart
+%     
+%         \resumeSubheading
+%             {Davidson College Bonner Scholars}{Davidson, NC}
+%             {Bonner Scholar}{Aug. 2013 -- May 2017}
+%             \resumeItemListStart
+%                 \resumeItem{}
+%                     {Performed 280 total hours of community service per school year and for two summers}
+%                 \resumeItem{}
+%                     {Attended weekly meetings to learn and discuss social issues as well as develop life skills}
+%                 \resumeItem{}
+%                     {Partnered with a local non-profit to work as a regular volunteer each semester}
+%         \resumeItemListEnd
+
+%         \resumeSubheading
+%             {Davidson College Quest Scholars}{Davidson, NC}
+%             {Secretary (2016-2017), General/Founding member}{Aug. 2013 -- May 2017}
+%             \resumeItemListStart
+%                 \resumeItem{}
+%                     {Assisted the organization and preparation of events such as a yearly clothing drive and a privilege awareness event}
+%                 \resumeItem{}
+%                     {Attended weekly board meetings to plan for weekly or biweekly general meetings}
+%                 \resumeItem{}
+%                     {Facilitated communication with the general assembly in weekly e-mails}
+%         \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
